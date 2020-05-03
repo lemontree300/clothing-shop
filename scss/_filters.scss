@@ -1,0 +1,94 @@
+.filters {
+    max-width: 100%;
+    min-height: 143px;
+    background-color: #f5f6f7;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;    
+    justify-content: space-between;
+    overflow: hidden;
+    padding: 0 96px;
+    font: 400 18px QuicksandBold, sans-serif;
+    text-transform: uppercase;
+    color: #333333;
+
+    @media (max-width: 540px) {
+        .inner-filters {
+            margin-right: 40px;    
+        }
+
+        button {
+            font-size: 16px !important;
+            padding: 0 10px 0 10px;
+        }
+    }
+
+    @media (max-width: 415px) {
+        .inner-filters {
+            margin: 0 30px 0 -70px;
+        }
+    }
+
+    @media (max-width: 340px) {
+        .inner-filters {
+            margin-right: 10px;    
+        }
+    }
+
+    .inner-filters {
+        @media (max-width: 840px) {
+            label {
+                display: flex;
+                flex-direction: column;    
+            }
+        }
+
+        label {
+            width: 25px;
+            height: 24px;
+            border-radius: 3px;
+            border: solid 2px #cccccc;
+            background-color: #ffffff;
+            cursor: pointer;
+
+                &:nth-of-type(1) {
+                    margin-right: 93px;
+                }
+
+                &:nth-of-type(2) {
+                    margin-right: 129px;
+                }
+
+                p {
+                    padding-left: 44px;
+                }
+        }
+
+        input:checked + label {
+            background: url(../icons/angles/fa-check.png) no-repeat center;
+            border-color: #aa9b77;
+        }
+
+        input:hover + label {
+            border-color: #aa9b77;
+        }
+
+        input {
+            display: none;
+        }
+    }
+
+    button {
+        width: 204px;
+        height: 52px;
+        border-radius: 3px;
+        background-color: #aa9b77;
+        user-select: none;
+        font-size: 14px;
+        text-transform: uppercase;
+        color: #ffffff;
+        display: inline-flex;
+        justify-content: center;
+    }
+}

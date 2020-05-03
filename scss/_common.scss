@@ -1,0 +1,30 @@
+body {
+    min-height: 100vh;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.inner-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+* {
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: "QuicksandBold";
+    src: url("../fonts/Quicksand_Bold.otf") format("opentype");
+    font-style: normal;
+    font-weight: normal;
+}
+    
+@font-face {
+    font-family: "QuicksandBook";
+    src: url("../fonts/Quicksand_Book.otf") format("opentype");
+    font-style: normal;
+    font-weight: normal;
+}

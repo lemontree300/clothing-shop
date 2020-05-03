@@ -1,0 +1,159 @@
+.top-picture {
+    max-width: 100%;
+    height: 100vh;
+    background: url(../icons/top-icons/Livello1.png) no-repeat center/cover;
+    text-align: center;
+    color: #ffffff;
+    position: relative;
+    overflow: hidden;
+
+    header {
+        max-width: 100%;
+        height: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgba(0, 0, 0, 0.25);
+        padding: 0 67px 0 64px;
+        position: fixed;
+        user-select: none;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 9;
+
+        @media (min-width: 1000px) {
+            .menu-button {
+                display: none;
+            }
+        }
+
+        @media (max-width: 999px) {
+            .menu-button {
+                width: 50px;
+                height: 50px;
+                background: url(../icons/menu-button/menu_button.png) no-repeat center/contain;
+            }
+        
+            .menu-button.open {
+                background: url(../icons/menu-button/close_button.png) no-repeat center/contain;
+            }
+        
+            .menu-button:not(.open) + nav {
+                display: none;
+            }
+
+            nav {
+                position: fixed;
+                top: 120px;
+                right: 0;
+                left: 0;
+                bottom: 0;
+                z-index: 2;
+                display: flex;
+                flex-direction: column !important;
+                align-items: center !important;
+                background-color: #ececec;
+        
+                a {
+                    margin: 50px 0 50px 0;
+                    font-size: 40px;
+                    color: black !important;
+                }
+
+                .shopping-cart-top-picture {
+                    transform: translate(190px, -405px);
+                    width: 35px !important;
+                    height: 35px !important;
+                }
+
+                @media (max-width: 700px) {
+                    .shopping-cart-top-picture {
+                        transform: translate(80px, -405px);
+                    }
+                }
+
+                @media (max-width: 480px) {
+                    .shopping-cart-top-picture {
+                        transform: translate(30px, -405px);
+                    }
+                }
+
+                @media (max-width: 350px) {
+                    .shopping-cart-top-picture {
+                        transform: translate(0, -405px);
+                    }
+                }
+            }   
+        }
+
+        .sneakers-top-picture {
+            width: 53px;
+            height: 40px;
+            background: url(../icons/top-icons/Livello8.png) no-repeat center;
+            cursor: unset;
+            pointer-events: none;
+        }
+
+        nav {
+            font: 400 18px QuicksandBold, sans-serif;
+            display: flex;
+            flex-direction: row;
+
+            a {
+                color: #ffffff;
+                margin-right: 53px;
+            }
+
+            .shopping-cart-top-picture {
+                width: 24px;
+                height: 20px;
+                background: url(../icons/top-icons/fa-shopping-cart.png) no-repeat center/cover;
+                margin-right: 0;
+            }
+        }
+    }   
+
+    h1 {
+        display: flex;
+        justify-content: center;
+        padding-top: 190px;
+        width: 100%;
+        font: 400 60px QuicksandBold, sans-serif;
+
+        @media (max-width: 899px) {
+            font-size: 50px;
+        }
+
+        @media (max-width: 709px) {
+            padding: 190px 40px 0 40px;
+        }
+
+        @media (max-width: 415px) {
+            padding: 190px 30px 0 30px;
+            font-size: 45px;
+        }
+
+        @media (max-width: 361px) {
+            padding: 190px 25px 0 25px;
+            font-size: 40px;
+        }
+    }
+
+    p {
+        width: 50%;
+        transform: translateX(50%);
+        padding-top: 14px;
+        font: 400 20px QuicksandBook, sans-serif;
+    }
+
+    .scroll-down-top-picture {
+        position: absolute;
+        left: 48%;
+        right: 48%;
+        bottom: 6%;
+        width: 75px;
+        height: 75px;
+        background: url(../icons/top-icons/fa-chevron-down.png) no-repeat center;
+    }
+}

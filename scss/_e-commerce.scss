@@ -1,0 +1,29 @@
+.e-commerce {
+    max-width: 100%;
+    min-height: 72px;
+    background-color: #535253;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    @media (max-width: 380px) {
+        p {
+            margin-right: 20px;
+        }
+    }
+
+    .twitter {
+        width: 29px;
+        height: 24px;
+        background: url(../icons/fa-twitter.png) no-repeat center;
+        padding-left: 64px;
+    }
+
+    p {
+        color: #ffffff;
+        font: 400 16px QuicksandBold, sans-serif;
+        padding-top: 20px;
+    }
+}

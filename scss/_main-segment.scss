@@ -1,0 +1,195 @@
+.main-segment {
+    max-width: 100%;
+    min-height: 1310px;
+    background-color: #ffffff;
+    font: 400 20px QuicksandBold, sans-serif;
+    text-transform: uppercase;
+    color: #424242;
+
+    h2 {
+        margin: 87px 0 0 98px;
+        display: flex;
+        align-items: center;
+
+        &:after {
+            content: "";
+            flex-grow: 1;
+            height: 2px;
+            background-color: #cccccc;
+            margin: 0 95px 0 52px;
+        }
+
+        &:last-of-type {
+            margin: 93px 94px 0 0;
+            flex-direction: row-reverse;
+
+            &:after {
+                content: "";
+                margin: 0 9px 0 104px;
+            }
+        }
+    }
+
+    h4 {
+        max-width: 100%;
+        font: 400 16px QuicksandBold, sans-serif;
+        color: #aa9b77;
+        padding: 50px 97px 0 0;
+        display: flex;
+        justify-content: flex-end;
+
+        &:last-of-type {
+            padding: 60px 0 0 102px;
+            justify-content: flex-start;
+        }
+    }
+
+    .chevrons {
+        height: 12px;
+        max-width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        padding: 7px 99px 0 0;
+
+        &:last-of-type {
+            padding: 7px 0 0 102px;
+            justify-content: unset;
+        }
+
+        a {
+            width: 11px;
+            height: 12px;
+        }
+
+        .chevron-left {
+            background: url(../icons/angles/fa-chevron-left.png) no-repeat center;
+            margin-right: 6px;
+        }
+
+        .chevron-right {
+            background: url(../icons/angles/fa-chevron-right.png) no-repeat center;
+        }
+    }
+
+    .three-products {
+        display: flex;
+        justify-content: space-around;
+        margin: 17px 10px 0 10px;
+
+        @media (max-width: 340px) {
+            .product {
+                max-width: 300px !important;
+                padding-right: 15px !important;
+                padding-left: 15px !important;
+            }
+        }
+
+        .product {
+            width: 320px;
+            height: 378px;
+            background-color: #f5f6f7;
+            margin-right: 64px;
+            position: relative;
+            cursor: pointer;
+            margin: 10px;
+
+            &:last-of-type {
+                margin-right: 0;
+            }
+
+            &:hover {
+                border-radius: 3px;
+                border: solid 6px #aa9b77;
+            }
+
+            img {
+                position: absolute;
+                top: 50%;
+                right: 50%;
+                transform: translate(50%, -50%);
+            }
+
+            .product-top {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                height: 90px;
+                width: 100%;
+
+                .product-size {
+                    font-size: 16px;
+                    margin-left: 24px;
+
+                    &:after {
+                        content: url(../icons/angles/fa-angle-down.png);
+                        margin-left: 5px;
+                    }
+                }
+
+                .product-size-special {
+                    font-size: 16px;
+                    margin-left: 24px;
+                }
+                
+                .three-colors, .two-colors {
+                    display: flex;
+                    margin-right: 25px;
+
+                    .product-color {
+                        width: 22px;
+                        height: 21px;
+                        border-radius: 50%;
+                        background-color: #165eb9;
+
+                        &:nth-child(1) {
+                            margin-right: 5px;
+                        }
+
+                        &:nth-child(2) {
+                            background-color: #ffe637;
+                            margin-right: 5px;
+                        }
+
+                        &:nth-child(3) {
+                            background-color: #535253;
+                        }
+                    }
+                }
+
+                .two-colors {
+                    .product-color {
+                        background-color: #d3a7ac;
+
+                        &:nth-child(2) {
+                            background-color: #ffffff;
+                        }
+                    }
+                }
+            }
+
+            .product-bottom {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                height: 90px;
+                width: 100%;
+                margin-top: 220px;
+
+                .product-name {
+                    font-size: 18px;
+                    color: #aa9b77;
+                    margin-left: 25px;
+                }
+
+                .product-price {
+                    font-size: 22px;
+                    margin-right: 25px;
+
+                    &:after {
+                        content: ",00€";
+                    }
+                }
+            }
+        }
+    }
+}
